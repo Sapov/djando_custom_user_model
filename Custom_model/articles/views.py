@@ -7,11 +7,11 @@ from django.views.generic import ListView, UpdateView, DetailView, DeleteView
 # Create your views here.
 class ArticleListView(ListView):
     model = models.Articles
-    template_name = 'article_list_view.html'
+    template_name = 'article_list.html'
 
 class ArticleUpdateView(UpdateView):
     model = models.Articles
-    template_name = 'article_update.html'
+    template_name = 'article_edit.html'
 
 class ArticleDetailView(DetailView):
     model = models.Articles
